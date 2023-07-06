@@ -1,16 +1,29 @@
 import React, { useEffect, useState } from 'react'
 import rasm from '../img/Rectangle 27.png'
 export  function Shop() {
-  const spdata = [{img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00'}, 
-    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'black'}, 
-    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'blue'}, 
-    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'red'}, 
-    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'reed'}, 
-    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'red'}, 
-    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'grey'}, 
-    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'black'}, 
-    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'orange'}, 
-    {img:rasm,sp1:'nodern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'grey'}, ] 
+  const spdata = [
+    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'black',vid:'ceiling'}, 
+    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'black',vid:'floor'}, 
+    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'blue',vid:'led'}, 
+    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'red',vid:'modern'}, 
+    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'reed',vid:'retro'}, 
+    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'red',vid:'wood'}, 
+    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'grey',vid:'wood'}, 
+    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'black',vid:'retro'}, 
+    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'orange',vid:'led'}, 
+    {img:rasm,sp1:'nodern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'grey',vid:'retro'}, ] 
+
+    const ceiling = [
+      {img:rasm,sp1:'Mdern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'black',vid:'ceiling'}, 
+      {img:rasm,sp1:'Mdern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'black',vid:'floor'}, 
+      {img:rasm,sp1:'Mdern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'blue',vid:'led'}, 
+      {img:rasm,sp1:'Mdern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'red',vid:'modern'}, 
+      {img:rasm,sp1:'Mdern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'reed',vid:'retro'}, 
+      {img:rasm,sp1:'odern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'red',vid:'wood'}, 
+      {img:rasm,sp1:'Mdern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'grey',vid:'wood'}, 
+      {img:rasm,sp1:'Mdern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'black',vid:'retro'}, 
+      {img:rasm,sp1:'Mdern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'orange',vid:'led'}, 
+      {img:rasm,sp1:'nodern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'grey',vid:'retro'}, ] 
 
   
     const [some,setSome] = useState(spdata)
@@ -92,22 +105,26 @@ onChange={(e)=>{setAny(e.target.value)}}
 />
         </div>
         <div className="categsp1">
-         <a href="" id='asp'>Category</a>
-         <a href="">Ceiling (25)</a>
-         <a href="">Floor (25)</a>
-         <a href="">Led (25)</a>
-         <a href="">Modern (25)</a>
-         <a href="">Retro (25)</a>
-        <a href="">Wood (25)</a>
+          <select name="" id="">
+         <option className='btn764' href="" id='asp'>Category</option>
+         <option className='btn764'  href="">Ceiling (25)</option>
+         <option  className='btn764'href="">Floor (25)</option>
+         <option className='btn764' href="">Led (25)</option>
+         <option className='btn764' href="">Modern (25)</option>
+         <option className='btn764' href="">Retro (25)</option>
+        <option  className='btn764'href="">Wood (25)</option>
+        </select>
         </div>
         <div className="categsp2">
-          <a href="" id='asp'>Color</a>
+        
+         <a href="" id='asp'>Color</a>
           <button  className='btn764' onClick={()=>fil('black')}>Black (25)</button>
           <button  className='btn764' onClick={()=>fil('blue')}>Blue (25)</button>
           <button className='btn764' onClick={()=>fil('red')}>Red (25)</button>
           <button className='btn764'  onClick={()=>fil('green')}>Green (25)</button>
           <button className='btn764' onClick={()=>fil('yellow')}>Yellow (25)</button>
           <button className='btn764' onClick={()=>fil('grey')}>Grey (25)</button>
+          
           </div>
       </div>
      </div>

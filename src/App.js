@@ -6,7 +6,7 @@ import { Shop } from "./pages/Shop/Shop";
 function App() {
   return (
     <div className="App">
-    <Xojiakbar></Xojiakbar>
+    <Xojiakbar/>
 
       <Shop/>
 
