@@ -1,12 +1,15 @@
-
-
 import React from "react";
+import { Futer } from "./components/Futer/Futer";
+import { Navbar } from "./components/Navbar/Navbar";
 
-function App() {
+export function App() {
   return (
     <div className="App">
-      salom 
-      s
+      <Navbar />
+      <Futer />
+
+
+      salom start
     </div>
   );
 }
