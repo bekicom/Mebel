@@ -61,14 +61,7 @@ useEffect(()=>{
     setSome(spdata.filter((item) => item.color === color));
   };
   return (
-<<<<<<< HEAD
-    <div>
-      shop
 
-
-
-    </div>
-=======
     <div className='Spwrapp'>
      <div className="sec1sp">
       <div className="nimsp">
@@ -123,6 +116,6 @@ onChange={(e)=>{setAny(e.target.value)}}
      </div>
      
     
->>>>>>> f59215d99336a3f0539fb785f6af1ac5807e0a3a
+
   )
 }
