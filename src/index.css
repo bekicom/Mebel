@@ -13,7 +13,7 @@ body{
     display: flex;
     justify-content: center;
     background-color: gray;
-    flex-direction: column;
+  
 }
 .Spwrapp{
 width: 911px; 
@@ -150,4 +150,16 @@ line-height: normal;
     gap: 32px;
     
 
+}
+.btn764{
+    background-color:rgba(210, 105, 30, 0) ;
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    color: #7E7E7E;
+    font-size: 19px;
+    font-family: Product Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
