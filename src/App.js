@@ -1,23 +1,7 @@
 
-
 import React from "react"
-
-
-  
-
-
-
 git
 import React from "react";
-import Xojiakbar from "./Xojiakbar/xojiakbar";
-
-
-
-
-
-
-
-
 
   function App() {
   return (
