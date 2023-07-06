@@ -1,9 +1,15 @@
 import React from "react";
+import Xojiakbar from "./Xojiakbar/xojiakbar";
+
+import { Shop } from "./pages/Shop/Shop";
 
 function App() {
   return (
     <div className="App">
-   salom start
+    <Xojiakbar></Xojiakbar>
+
+      <Shop/>
+
     </div>
   );
 }
