@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section1>h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+.section1>p{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    padding-top: 50px;
+}
+
+.ha{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.btn1>p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.btn1>span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    color: #929292;
+}
+
+
+
+
+
+.btn2>p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.btn2>span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    color: #929292;
+}
+
+
+
+
+.btn3>p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.btn3>span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    color: #929292;
+}
+
+
+
+
+
+
+
+.ha2{
+    background-image: url(./img/lampa2.png);
+    width: 1500px;
+    height: 1200px;
+    margin-left: 30px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.ha2>p{
+    display: flex;
+    align-items: center;
+    padding-left: 960px;
+    padding-top: 50px;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.ha2>button{
+    margin-left: 1050px;
+    margin-top: 50px;
+    width: 150px;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border: 2px solid white;
+    color: #FFFFFF;
+}
+
+.ha2>img{
+    padding-top: 100px;
+}
+
+
+
+.b{
+    display: flex;
+    align-items: center;
+}
+
+.left{
+    padding-left: 150px;
+}
+.left>p{
+    color: #ABABAB;
+}
+.left>button{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border: 2px solid #272727;
+    padding: 20px;
+    width: 150px;
+}
+.right>img{
+    padding-left: 300px;
+}
+
+
+
+.right2{
+    margin-left: 200px;
+}
+
+
+.right2>p{
+    color: #ABABAB;
+}
+.right2>button{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border: 2px solid #272727;
+    padding: 20px;
+    width: 150px;
+}
+
+
+.ha5{
+    background-color: #EFEFEF;
+    border: 2px solid #EFEFEF;
+    height: 400px;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ha5>button{
+    padding: 20px;
+    width: 150px;
+    margin-left: 50px;
+}
+#f{
+    padding-left: 100px;
+}
+.bt1{
+    padding: 20px;
+}
+.bt1>p{
+    margin-left: 20px;
+    color: #929292;
+}
+.h1{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.ha6{
+    display: flex;
+
+}
+
+
+
+
+.ha7{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.d1{
+    padding-left: 100px;
+}
+
+.d1>p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d1>span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.d2{
+    padding-left: 100px;
+}
+
+.d2>p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d2>span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
