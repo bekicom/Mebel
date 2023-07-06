@@ -1,6 +1,5 @@
 
 import React from "react"
-// import { Nurbek } from "./pages/Nurbek/Nurbek";
 
 
   
@@ -19,9 +18,11 @@ import React from "react"
   return (
     <div className="App">
 
-   {/* salom start */}
+    salom start 
 
-   {/* <Nurbek/> */}
+    nurbek salom asdfghjkl
+
+   
 
   
 
