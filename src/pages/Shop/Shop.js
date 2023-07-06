@@ -2,33 +2,38 @@ import React, { useEffect, useState } from 'react'
 import rasm from '../img/Rectangle 27.png'
 export  function Shop() {
   const spdata = [
-    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'black',vid:'ceiling'}, 
-    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'black',vid:'floor'}, 
-    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'blue',vid:'led'}, 
-    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'red',vid:'modern'}, 
-    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'reed',vid:'retro'}, 
-    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'red',vid:'wood'}, 
-    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'grey',vid:'wood'}, 
-    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'black',vid:'retro'}, 
-    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'orange',vid:'led'}, 
-    {img:rasm,sp1:'nodern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'grey',vid:'retro'}, ] 
+    {img:rasm,sp1:'Modern sofa black',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'black',vid:'ceiling'}, 
+    {img:rasm,sp1:'Modern sofa black',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'black',vid:'floor'}, 
+    {img:rasm,sp1:'Modern sofa blue',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'blue',vid:'led'}, 
+    {img:rasm,sp1:'Modern sofa red',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'red',vid:'modern'}, 
+    {img:rasm,sp1:'Modern sofa red',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'red',vid:'retro'}, 
+    {img:rasm,sp1:'Modern sofa red',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'red',vid:'wood'}, 
+    {img:rasm,sp1:'Modern sofa grey',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'grey',vid:'wood'}, 
+    {img:rasm,sp1:'Modern sofa black',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'black',vid:'retro'}, 
+    {img:rasm,sp1:'Modern sofa orenge',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'orange',vid:'led'}, 
+    {img:rasm,sp1:'nodern sofa grey',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'grey',vid:'retro'}, ] 
 
-    const ceiling = [
-      {img:rasm,sp1:'Mdern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'black',vid:'ceiling'}, 
-      {img:rasm,sp1:'Mdern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'black',vid:'floor'}, 
-      {img:rasm,sp1:'Mdern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'blue',vid:'led'}, 
-      {img:rasm,sp1:'Mdern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'red',vid:'modern'}, 
-      {img:rasm,sp1:'Mdern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'reed',vid:'retro'}, 
-      {img:rasm,sp1:'odern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'red',vid:'wood'}, 
-      {img:rasm,sp1:'Mdern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'grey',vid:'wood'}, 
-      {img:rasm,sp1:'Mdern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'black',vid:'retro'}, 
-      {img:rasm,sp1:'Mdern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'orange',vid:'led'}, 
-      {img:rasm,sp1:'nodern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'grey',vid:'retro'}, ] 
-
-  
-    const [some,setSome] = useState(spdata)
+    const [originalArray, setOriginalArray] = useState([1, 2, 3, 4, 5]);
+    const [some,setSome] = useState([])
     const [any,setAny] = useState('')
-    const [anyt,setAnyt] = useState('')
+    const [anyt,setAnyt] = useState('led')
+
+
+    
+    const filterArray = (d) => {
+      const filtered = spdata.filter((item) => item.vid   == d); 
+      setSome(filtered);
+    
+    };    const filterArray2 = () => {
+    
+      setSome(spdata);
+    
+    };
+
+   
+ 
+   
+    console.log(anyt)
 //     function tod(s){
 // if(s==='all'){
 // setSome(spdata)
@@ -70,8 +75,8 @@ useEffect(()=>{
   const [colorFilter,setColorFilter] = useState('');
 
   const fil = (color) => {
-    setColorFilter(color);
-    setSome(spdata.filter((item) => item.color === color));
+  
+    setSome(some.filter((item) => item.color === color));
   };
   return (
 
@@ -106,15 +111,15 @@ onChange={(e)=>{setAny(e.target.value)}}
 />
         </div>
         <div className="categsp1">
-          <select name="" id="">
-         <option className='btn764' href="" id='asp'>Category</option>
-         <option className='btn764'  href="">Ceiling (25)</option>
-         <option  className='btn764'href="">Floor (25)</option>
-         <option className='btn764' href="">Led (25)</option>
-         <option className='btn764' href="">Modern (25)</option>
-         <option className='btn764' href="">Retro (25)</option>
-        <option  className='btn764'href="">Wood (25)</option>
-        </select>
+        <button onClick={filterArray2} id='asp' className='btn764' value={spdata}   href="">Category</button>
+      
+         <button onClick={()=>filterArray('ceiling')} className='btn764' value={'ceiling'}   href="">Ceiling (25)</button>
+         <button  onClick={()=>filterArray('floor')}  className='btn764' value={'floor'} href="">Floor (25)</button>
+         <button onClick={()=>filterArray('led')} className='btn764' value={'led'}  href="">Led (25)</button>
+         <button  onClick={()=>filterArray('modern')} className='btn764' value={'modern'}  href="">Modern (25)</button>
+         <button onClick={()=>filterArray('retro')} className='btn764' value={'retro'}  href="">Retro (25)</button>
+        <button  onClick={()=>filterArray('wood')} className='btn764' value={'wood'} href="">Wood (25)</button>
+       
         </div>
         <div className="categsp2">
         
@@ -130,6 +135,7 @@ onChange={(e)=>{setAny(e.target.value)}}
       </div>
      </div>
      </div>
+   
      </div>
      
 
