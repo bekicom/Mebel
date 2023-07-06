@@ -1,13 +1,20 @@
+import React from "react"
+import { Nurbek } from "./pages/Nurbek/Nurbek";
 
 
-import React from "react";
+  
 
-function App() {
+  function App() {
   return (
     <div className="App">
-   salom start
+   {/* salom start */}
+
+   <Nurbek/>
     </div>
   );
 }
 
 export default App;
+
+
+
