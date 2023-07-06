@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+a{
+    color: black;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+}
+.Spwrapp{
+width: 911px; 
+height: auto;
+display: flex;
+flex-direction: column;
+padding: 97px 76px;
+gap: 56px;
+}
+.spbosh{
+  width: 911px;
+    display: flex;
+  justify-content: space-between;
+}
+.spsp1{
+    color: #7E7E7E;
+font-size: 18px;
+font-family: Product Sans;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.sps{
+    width: 911px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 43px;
+    padding-top: 55px;
+   
+}
+.spp{
+
+    display: flex;
+
+}
+.boxs{
+    width: 275px;
+height: 350px;
+    display: flex;
+    flex-direction: column;
+
+gap: 17px;
+}
+.boxs>img{
+    width: 275px;
+    height: 266px;
+}
+.non{
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+ align-items: center;
+  gap: 17px;
+}
+.sp3{
+    color: #000;
+font-size: 19px;
+font-family: Product Sans;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.sp5{
+    color: #6B6B6B;
+    font-size: 19px;
+    font-family: Product Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.inpsp{
+    width: 320px;
+height: 71px;
+border: 1px solid rgba(0, 0, 0, 0.25);
+color: #A9A3A3;
+font-size: 18px;
+font-family: Product Sans;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+display: flex;
+}
+.Spwrapp{
+    width: 1400px;
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+}
+.sec1sp{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+.categsp1{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    
+
+}
+
+.categsp1>a{
+    color: #7E7E7E;
+    font-size: 19px;
+    font-family: Product Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+.categsp2>a{
+    color: #7E7E7E;
+    font-size: 19px;
+    font-family: Product Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#asp{
+    color: #2D2D2D;
+font-size: 23px;
+font-family: Product Sans;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.categsp2{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    
+
+}
