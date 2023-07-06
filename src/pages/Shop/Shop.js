@@ -10,7 +10,7 @@ export  function Shop() {
     {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'grey'}, 
     {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'black'}, 
     {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'orange'}, 
-    {img:rasm,sp1:'nodern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'grey'}, ]
+    {img:rasm,sp1:'nodern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'grey'}, ] 
 
   
     const [some,setSome] = useState(spdata)
@@ -102,12 +102,12 @@ onChange={(e)=>{setAny(e.target.value)}}
         </div>
         <div className="categsp2">
           <a href="" id='asp'>Color</a>
-          <a href="" onClick={()=>fil('black')}>Black (25)</a>
-          <a href="" onClick={()=>fil('blue')}>Blue (25)</a>
-          <a href="" onClick={()=>fil('red')}>Red (25)</a>
-          <a href="" onClick={()=>fil('green')}>Green (25)</a>
-          <a href="" onClick={()=>fil('yellow')}>Yellow (25)</a>
-          <a href="" onClick={()=>fil('grey')}>Grey (25)</a>
+          <button  onClick={()=>fil('black')}>Black (25)</button>
+          <button  onClick={()=>fil('blue')}>Blue (25)</button>
+          <button onClick={()=>fil('red')}>Red (25)</button>
+          <button  onClick={()=>fil('green')}>Green (25)</button>
+          <button onClick={()=>fil('yellow')}>Yellow (25)</button>
+          <button onClick={()=>fil('grey')}>Grey (25)</button>
           </div>
       </div>
      </div>
