@@ -1,13 +1,7 @@
 
 import React from "react";
 import { Futer } from "./components/Futer/Futer";
-import { Navbar } from "./components/Navbar/Navbar";
-
-
-
-
-
-import React from "react";
+import { Navbar } from "./components/Navbar/Navbar"
 import { Shop } from "./pages/Shop/Shop";
 import Xojiakbar from "./Xojiakbar/xojiakbar";
 
@@ -16,13 +10,10 @@ export function App() {
     <div className="App">
       <Navbar />
       <Futer />
-      </div>
+    </div>
   )
 };
 
-
-
-}
 
 export default App;
 
