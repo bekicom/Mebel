@@ -1,18 +1,19 @@
 
 import React from "react"
-git
-import React from "react";
+import {Nurbek} from "./pages/Nurbek/Nurbek"
+
+
 
   function App() {
   return (
     <div className="App">
 
-    salom start 
+    {/* salom start 
 
-    nurbek salom asdfghjkl
+    nurbek salom asdfghjkl */}
 
    
-
+<Nurbek/>
   
 
     </div>
