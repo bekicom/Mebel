@@ -1,20 +1,20 @@
 
 import React from "react";
-import { Futer } from "./components/Futer/Futer";
-import { Navbar } from "./components/Navbar/Navbar"
 import { Shop } from "./pages/Shop/Shop";
-import Xojiakbar from "./Xojiakbar/xojiakbar";
-import {Nurbek} from "./pages/Nurbek/Nurbek"
+import Xojiakbar from ".././src/pages/Xojiakbar/xojiakbar";
+import { Navbar } from "./components/Navbar/Navbar";
+import { Futer } from "./components/Futer/Futer";
 
-export function App() {
-
+function App() {
   return (
     <div className="App">
       <Navbar />
-      <Nurbek/>
-      <Xojiakbar/>
-      <Shop/>
+      <Xojiakbar />
+      <Shop />
       <Futer />
     </div>
-  )
-};
+  );
+
+}
+
+export default App;
