@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Futer } from "./components/Futer/Futer";
 import { Navbar } from "./components/Navbar/Navbar";
@@ -7,11 +8,8 @@ export function App() {
     <div className="App">
       <Navbar />
       <Futer />
-
-
-      salom start
-    </div>
-  );
-}
+      </div>
+  )
+};
 
 export default App;

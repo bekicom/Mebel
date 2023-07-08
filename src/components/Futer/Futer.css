@@ -16,41 +16,63 @@ footer {
 .card1 {
     width: 25%;
     height: 100%;
-    background-color: red;
-    padding: 36px 84px 61px 67px;
+    background-color: #2B2B2B;
+    padding: 36px 15px 61px 67px;
 }
 
-.span{
+.p {
     color: #E9E9E9;
     font-size: 31px;
     font-weight: bold;
 }
 
-span{
+.p2 {
     color: #E9E9E9;
     font-size: 31px;
     font-weight: bold;
-     margin: 47px 0px 31px 0px;
+    margin: 47px 0px 31px 0px;
 }
 
-p{
+.p3 {
     color: #ABABAB;
+    font-size: 23px;
+    font-weight: 400;
 }
 
-.card2{
+.card2 {
     width: 25%;
     height: 100%;
-    background-color: blue; 
+    background-color: #2B2B2B;
+    padding: 121px 0px 0px 90px;
 }
 
-.card3{
-    width: 25%;
-    height: 100%;
-    background-color: darkblue; 
+.katta_p {
+    color: rgba(233, 233, 233, 1);
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
 }
 
-.card4{
+.kichkina {
+    color: rgba(171, 171, 171, 1);
+    margin: 16px 0px 16px 0px;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.card3 {
     width: 25%;
     height: 100%;
-    background-color: gold; 
+    background-color: #2B2B2B;
+    padding: 121px 10px 0px 60px;
+}
+
+.card4 {
+    width: 25%;
+    height: 100%;
+    background-color: #2B2B2B;
+    padding: 121px 0px 0px 0px;
 }

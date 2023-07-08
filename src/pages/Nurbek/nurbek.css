@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.aaaa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+
+.asa{
+    padding: 67px;
+}
+.ggg{
+    margin: 20px;
+    display: flex;
+width: 299px;
+flex-direction: column;
+flex-shrink: 0;
+color: #898989;
+font-family: Product Sans;
+font-size: 19px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.hhh{
+    margin: 20px;
+    display: flex;
+width: 320px;
+flex-direction: column;
+flex-shrink: 0;
+color: #2D2D2D;
+font-family: Product Sans;
+font-size: 23px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.fdf{
+   margin: 20px;
+    width: 320px;
+height: 71px;
+flex-shrink: 0;
+}
+.you{
+    margin: 20px;
+    width: 320px;
+height: 183px;
+flex-shrink: 0;
+}
