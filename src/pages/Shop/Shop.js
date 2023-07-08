@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import rasm from '../img/Rectangle 27.png'
+import rasm1 from '../img/Rectangle 33.png'
+import rasm2 from '../img/Rectangle 30 (1).png'
+import rasm3 from '../img/Rectangle 31.png'
+import rasm4 from '../img/Rectangle 27.png'
 export  function Shop() {
   const spdata = [
     {img:rasm,sp1:'Modern sofa black',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'black',vid:'ceiling'}, 
@@ -8,12 +12,11 @@ export  function Shop() {
     {img:rasm,sp1:'Modern sofa red',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'red',vid:'modern'}, 
     {img:rasm,sp1:'Modern sofa red',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'red',vid:'retro'}, 
     {img:rasm,sp1:'Modern sofa red',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'red',vid:'wood'}, 
-    {img:rasm,sp1:'Modern sofa grey',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'grey',vid:'wood'}, 
+    {img:rasm2,sp1:'Modern sofa grey',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'grey',vid:'wood'}, 
     {img:rasm,sp1:'Modern sofa black',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'black',vid:'retro'}, 
     {img:rasm,sp1:'Modern sofa orenge',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'orange',vid:'led'}, 
-    {img:rasm,sp1:'nodern sofa grey',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'grey',vid:'retro'}, ] 
+    {img:rasm1,sp1:'nodern sofa grey',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'grey',vid:'retro'}, ] 
 
-    const [originalArray, setOriginalArray] = useState([1, 2, 3, 4, 5]);
     const [some,setSome] = useState([])
     const [any,setAny] = useState('')
     const [anyt,setAnyt] = useState('led')
@@ -75,8 +78,13 @@ useEffect(()=>{
   const [colorFilter,setColorFilter] = useState('');
 
   const fil = (color) => {
+    
   
+    
+
     setSome(some.filter((item) => item.color === color));
+  
+ 
   };
   return (
 

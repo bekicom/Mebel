@@ -1,15 +1,35 @@
 
+
+
+
+
+
 import React from "react";
+import { Shop } from "./pages/Shop/Shop";
 import Xojiakbar from "./Xojiakbar/xojiakbar";
 
-import { Shop } from "./pages/Shop/Shop";
 
-function App() {
+
+
+
+
+
+
+
+  function App() {
   return (
     <div className="App">
+
     <Xojiakbar/>
 
-      <Shop/>
+<Shop/>
+    salom start 
+
+    nurbek salom asdfghjkl
+
+   
+
+  
 
     </div>
   );
@@ -17,3 +37,6 @@ function App() {
 }
 
 export default App;
+
+
+
