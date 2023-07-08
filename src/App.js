@@ -1,36 +1,13 @@
 
-
-
-
-
-
 import React from "react";
 import { Shop } from "./pages/Shop/Shop";
-import Xojiakbar from "./Xojiakbar/xojiakbar";
+import Xojiakbar from ".././src/pages/Xojiakbar/xojiakbar";
 
-
-
-
-
-
-
-
-
-  function App() {
+function App() {
   return (
     <div className="App">
-
-    <Xojiakbar/>
-
-<Shop/>
-    salom start 
-
-    nurbek salom asdfghjkl
-
-   
-
-  
-
+      <Xojiakbar />
+      <Shop />
     </div>
   );
 

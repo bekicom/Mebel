@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import rasm from '../img/Rectangle 27.png'
-import rasm1 from '../img/Rectangle 33.png'
-import rasm2 from '../img/Rectangle 30 (1).png'
-import rasm3 from '../img/Rectangle 31.png'
-import rasm4 from '../img/Rectangle 27.png'
-export  function Shop() {
+import rasm from '../../assets/Img/Rectangle 27.png'
+import rasm1 from '../../assets/Img/Rectangle 33.png'
+import rasm2 from '../../assets/Img/Rectangle 30 (1).png'
+export  function Shop() { 
   const spdata = [
     {img:rasm,sp1:'Modern sofa black',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'black',vid:'ceiling'}, 
     {img:rasm,sp1:'Modern sofa black',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'black',vid:'floor'}, 
@@ -75,7 +73,7 @@ useEffect(()=>{
 // }
 // }
 
-  const [colorFilter,setColorFilter] = useState('');
+  // const [colorFilter,setColorFilter] = useState('');
 
   const fil = (color) => {
     

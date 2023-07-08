@@ -1,5 +1,5 @@
 import React from 'react';
-import img from './img/gul.png'
+import img from '../../assets/Img/gul.png'
 import './index.css';
 const Xojiakbar = () => {
     return (
@@ -7,7 +7,7 @@ const Xojiakbar = () => {
             <div className="ha2">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Consequat dolor odio odio malesuada at condimentum <br /> adipiscing iaculis semper.</p>
                 <button>View more </button>
-                <img src={require('./img/ek.png')} alt="" />
+                <img src={img} alt="" />
 
             </div>
             <div className="ha3">
@@ -21,14 +21,14 @@ const Xojiakbar = () => {
                         <button>View more </button>
                     </div>
                     <div className="right">
-                        <img src={require('./img/oq st.png')} alt="" />
+                        <img src={img} alt="" />
                     </div>
                 </div><br /><br />
 
 
                 <div className="b">
                     <div className="left">
-                        <img src={require('./img/qora.png')} alt="" />
+                        <img src={img} alt="" />
                     </div>
                     <div className="right2">
 
@@ -45,7 +45,7 @@ const Xojiakbar = () => {
                         <button>View more </button>
                     </div>
                     <div className="right">
-                        <img src={require('./img/soat.png')} alt="" />
+                        <img src={img} alt="" />
                     </div>
                 </div>
 
@@ -104,14 +104,14 @@ const Xojiakbar = () => {
 
             <div className="ha7">
                 <div className="d1">
-                    <img src={require('./img/1.png')} alt="" /> <br />
+                    <img src={img} alt="" /> <br />
                     <p>29 sep,2022 / by soroush norozy</p> <br />
                     <p>Your office should have only natural materials</p><br />
                     <span>read more</span>
                 </div>
 
                 <div className="d2">
-                    <img src={require('./img/2.png')} alt="" /> <br />
+                    <img src={img} alt="" /> <br />
                     <p>29 sep,2022 / by soroush norozy</p><br />
                     <p>Your office should have only natural materials</p><br />
                     <span>read more</span>
