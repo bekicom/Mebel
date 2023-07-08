@@ -1,21 +1,42 @@
 import React, { useEffect, useState } from 'react'
 import rasm from '../img/Rectangle 27.png'
+import rasm1 from '../img/Rectangle 33.png'
+import rasm2 from '../img/Rectangle 30 (1).png'
+import rasm3 from '../img/Rectangle 31.png'
+import rasm4 from '../img/Rectangle 27.png'
 export  function Shop() {
-  const spdata = [{img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00'}, 
-    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'black'}, 
-    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'blue'}, 
-    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'red'}, 
-    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'reed'}, 
-    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'red'}, 
-    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'grey'}, 
-    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'black'}, 
-    {img:rasm,sp1:'Modern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'orange'}, 
-    {img:rasm,sp1:'nodern sofa',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'grey'}, ] 
+  const spdata = [
+    {img:rasm,sp1:'Modern sofa black',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'black',vid:'ceiling'}, 
+    {img:rasm,sp1:'Modern sofa black',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'black',vid:'floor'}, 
+    {img:rasm,sp1:'Modern sofa blue',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'blue',vid:'led'}, 
+    {img:rasm,sp1:'Modern sofa red',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'red',vid:'modern'}, 
+    {img:rasm,sp1:'Modern sofa red',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'red',vid:'retro'}, 
+    {img:rasm,sp1:'Modern sofa red',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'red',vid:'wood'}, 
+    {img:rasm2,sp1:'Modern sofa grey',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'grey',vid:'wood'}, 
+    {img:rasm,sp1:'Modern sofa black',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'black',vid:'retro'}, 
+    {img:rasm,sp1:'Modern sofa orenge',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'orange',vid:'led'}, 
+    {img:rasm1,sp1:'nodern sofa grey',sp2:'⭐️⭐️⭐️⭐️',sp3:'$73,00',color:'grey',vid:'retro'}, ] 
 
-  
-    const [some,setSome] = useState(spdata)
+    const [some,setSome] = useState([])
     const [any,setAny] = useState('')
-    const [anyt,setAnyt] = useState('')
+    const [anyt,setAnyt] = useState('led')
+
+
+    
+    const filterArray = (d) => {
+      const filtered = spdata.filter((item) => item.vid   == d); 
+      setSome(filtered);
+    
+    };    const filterArray2 = () => {
+    
+      setSome(spdata);
+    
+    };
+
+   
+ 
+   
+    console.log(anyt)
 //     function tod(s){
 // if(s==='all'){
 // setSome(spdata)
@@ -57,8 +78,13 @@ useEffect(()=>{
   const [colorFilter,setColorFilter] = useState('');
 
   const fil = (color) => {
-    setColorFilter(color);
-    setSome(spdata.filter((item) => item.color === color));
+    
+  
+    
+
+    setSome(some.filter((item) => item.color === color));
+  
+ 
   };
   return (
 
@@ -93,29 +119,33 @@ onChange={(e)=>{setAny(e.target.value)}}
 />
         </div>
         <div className="categsp1">
-         <a href="" id='asp'>Category</a>
-         <a href="">Ceiling (25)</a>
-         <a href="">Floor (25)</a>
-         <a href="">Led (25)</a>
-         <a href="">Modern (25)</a>
-         <a href="">Retro (25)</a>
-        <a href="">Wood (25)</a>
+        <button onClick={filterArray2} id='asp' className='btn764' value={spdata}   href="">Category</button>
+      
+         <button onClick={()=>filterArray('ceiling')} className='btn764' value={'ceiling'}   href="">Ceiling (25)</button>
+         <button  onClick={()=>filterArray('floor')}  className='btn764' value={'floor'} href="">Floor (25)</button>
+         <button onClick={()=>filterArray('led')} className='btn764' value={'led'}  href="">Led (25)</button>
+         <button  onClick={()=>filterArray('modern')} className='btn764' value={'modern'}  href="">Modern (25)</button>
+         <button onClick={()=>filterArray('retro')} className='btn764' value={'retro'}  href="">Retro (25)</button>
+        <button  onClick={()=>filterArray('wood')} className='btn764' value={'wood'} href="">Wood (25)</button>
+       
         </div>
         <div className="categsp2">
-          <a href="" id='asp'>Color</a>
+        
+         <a href="" id='asp'>Color</a>
           <button  className='btn764' onClick={()=>fil('black')}>Black (25)</button>
           <button  className='btn764' onClick={()=>fil('blue')}>Blue (25)</button>
           <button className='btn764' onClick={()=>fil('red')}>Red (25)</button>
           <button className='btn764'  onClick={()=>fil('green')}>Green (25)</button>
           <button className='btn764' onClick={()=>fil('yellow')}>Yellow (25)</button>
           <button className='btn764' onClick={()=>fil('grey')}>Grey (25)</button>
+          
           </div>
       </div>
      </div>
      </div>
+   
      </div>
      
-    
 
   )
 }
